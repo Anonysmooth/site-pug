@@ -1,0 +1,113 @@
+// color
+
+$staticHeader:grey;
+$fixedHeader:rgb(102, 102, 204);
+
+@mixin flex($dir,$alignX,$alignY) {
+  display:flex;
+  flex-direction:$dir;
+  justify-content:$alignX;
+  align-items:$alignY;
+}
+
+@mixin position($pos,$y,$yVal,$x,$xVal,$zIndex) {
+  position:$pos;
+  z-index:$zIndex;
+  @if $x == 'left'{
+    left:$xVal;
+  }@else {
+    right:$xVal;
+  }
+  @if $y == 'top'{
+    top:$yVal;
+  }@else{
+    bottom:$yVal;
+  }
+}
+
+@mixin size($width,$height){
+  width:$width;
+  height:$height;
+}
+
+*{
+  box-sizing:border-box;
+}
+body{
+  margin:0;
+}
+
+.container{
+  width:70%;
+  margin:0 auto;
+}
+
+header{
+  background:$staticHeader;
+  @include size(100%,auto);
+  @include flex(row,flex-start,flex-start);
+  
+  .hidden{
+    display:none;
+    background:$fixedHeader;
+    @include size(100%,auto);
+    @include position(fixed,top,0,left,0,0);
+  }
+  
+  &.fixed .hidden{
+    @include flex(row,flex-start,flex-start);
+  }
+  
+  ul{
+    margin:0;
+    
+    li a{
+      color:white;
+      text-decoration:none;
+    }
+  }
+}
+
+main{
+  
+  &.about article,
+  &.products article{
+    display:none;
+  }
+  &.about article:nth-of-type(2){
+    display:block;
+  }
+  &.products article:nth-of-type(1){
+    display:block;
+  }
+  
+  article{
+    border-bottom:1px solid grey;
+    
+    h1{
+      padding:15px 25px;
+    }
+    
+    .content-container{
+      display:flex;
+    }
+  }
+}
+
+.nav-li{
+  padding:15px;
+  list-style-type:none;
+}
+
+.row{
+  display:flex;
+}
+
+footer{
+  background:black;
+  height:20vh;
+  a{
+    padding:15px;
+    color:white;
+  }
+}

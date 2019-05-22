@@ -1,0 +1,85 @@
+{
+    "pages":
+    [
+        {
+            "id":1,
+            "title":"Our latest products",
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "img":"https://picsum.photos/300"},
+
+        {
+            "id":2,
+            "title":"Our purpose",
+            "content":"Senectus et netus et malesuada fames ac. Pellentesque eu tincidunt tortor aliquam nulla. Mauris pharetra et ultrices neque ornare aenean. Eget lorem dolor sed viverra ipsum nunc. Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Pretium quam vulputate dignissim suspendisse in. Sed viverra tellus in hac habitasse. Purus in mollis nunc sed id semper risus in. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Mauris commodo quis imperdiet massa tincidunt.\nScelerisque viverra mauris in aliquam sem fringilla ut morbi. Augue ut lectus arcu bibendum at varius vel. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. In aliquam sem fringilla ut morbi tincidunt augue interdum. Fermentum iaculis eu non diam phasellus vestibulum lorem sed. Non arcu risus quis varius quam quisque id. Nulla malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Massa placerat duis ultricies lacus sed. Vel fringilla est ullamcorper eget nulla facilisi. Eget lorem dolor sed viverra ipsum. Pretium fusce id velit ut tortor pretium viverra. Tempor commodo ullamcorper a lacus. Fusce id velit ut tortor pretium viverra suspendisse potenti.",
+            "img":"https://picsum.photos/300"},
+
+        {
+            "id":3,
+            "title":"Contact us",
+            "content":"Scelerisque viverra mauris in aliquam sem fringilla ut morbi. Augue ut lectus arcu bibendum at varius vel. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. In aliquam sem fringilla ut morbi tincidunt augue interdum. Fermentum iaculis eu non diam phasellus vestibulum lorem sed. Non arcu risus quis varius quam quisque id. Nulla malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Massa placerat duis ultricies lacus sed. Vel fringilla est ullamcorper eget nulla facilisi. Eget lorem dolor sed viverra ipsum. Pretium fusce id velit ut tortor pretium viverra. Tempor commodo ullamcorper a lacus. Fusce id velit ut tortor pretium viverra suspendisse potenti.",
+            "img":"https://picsum.photos/300"
+        }
+    ],
+    "links":[
+        {
+            "name":"Home",
+            "url":""
+
+        },
+        {
+            "name":"About",
+            "url":""
+
+        },
+        {
+            "name":"Product",
+            "url":""
+
+        }
+    ],
+    "products":[
+        {
+            "name":"t-shirt",
+            "price":20,
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "quantity":15,
+            "image":"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+        },
+        {
+            "name":"hoodie",
+            "price":60,
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "quantity":25,
+            "image":"https://images.unsplash.com/photo-1536677385083-bb29166e46df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
+        },
+        {
+            "name":"pant",
+            "price":50,
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "quantity":5,
+            "image":"https://picsum.photos/300"
+        },
+        {
+            "name":"hat",
+            "price":25,
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "quantity":10,
+            "image":"https://picsum.photos/200"
+        },
+        {
+            "name":"tennis",
+            "price":70,
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "quantity":12,
+            "image":"https://picsum.photos/200"
+        },
+        {
+            "name":"socks",
+            "price":20,
+            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "quantity":35,
+            "image":"https://picsum.photos/400"
+        }
+    ]
+
+}   

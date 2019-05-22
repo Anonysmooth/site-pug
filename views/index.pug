@@ -1,0 +1,37 @@
+mixin body
+  .container
+    main
+      article
+        h1 Products
+        .grid-container
+          each val,id in siteContent.products
+            div.grid(id="grid-"+val.name)
+              div.product-bg
+              h2= val.name
+              a.hidden(href='/product?tagId='+id) Discover
+              p.price Price : #{val.price} €
+              p.quantity Quantity : #{val.quantity}
+      each val in siteContent.pages
+        article( id='article-'+val.id )
+          h1= val.title
+          .content-container
+            img(src=val.img)
+            .text-container
+              p= val.content
+
+include mixins/script
+
+include mixins/head
++head
+
+include mixins/header
++header('row')
+
+body
+
+  +body
+
+  include mixins/footer
+  +footer('row')
+
++scripts

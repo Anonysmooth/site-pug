@@ -1,0 +1,46 @@
+mixin head
+  head
+    link(rel='stylesheet', href='../css/style.css')
+
+mixin header(title,dir)
+  header
+    nav
+      ul(class = dir)
+        each val in title
+          li.nav-li
+            a(href='#')= val
+      ul(class = dir).hidden
+        each val in title
+          li.nav-li
+            a(href='#')= val
+          
+mixin body(articles)
+  .container
+    main
+      each val in articles
+        article
+          h1= val.title
+          .content-container
+            img(src=val.img)
+            p= val.content
+      
+mixin footer(links)
+  - var links = ['Home','About','Products']
+  footer
+    each val in links
+      a.footer-link= val
+
+mixin scripts
+    script(src='../js/index.js')
+
+body
+
+  +head
+
+  +header(['Home','About','Products'],'row')
+
+  +body([{title:'Our latest products',content:'test of content',img:'https://picsum.photos/100'},{title:'Our purpose',content:'another test of content',img:'https://picsum.photos/100'},{title:'Contact us',content:'final test',img:'https://picsum.photos/100'}])
+
+  +footer
+
+  +scripts

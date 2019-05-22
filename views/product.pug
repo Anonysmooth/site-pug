@@ -1,0 +1,23 @@
+include mixins/script
+include mixins/head
+include mixins/header
+include mixins/footer
+
++head
+
++header('row')
+
+body
+
+    div.row-container
+      img.product-img(src= siteContent.products[request.query.tagId].image )
+      div.column-container
+        h1.product-title= siteContent.products[request.query.tagId].name
+        p.product-price Price :  #{siteContent.products[request.query.tagId].price}
+        p.product-quantity Quantity :  #{siteContent.products[request.query.tagId].quantity}
+        p.product-content #{siteContent.products[request.query.tagId].content}
+        a(href='/').btn.red-btn Retour
+
++footer('row')
+
++scripts

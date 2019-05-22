@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "sans serif";
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+header {
+  background: grey;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+header .hidden {
+  display: none;
+  background: #6666cc;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+}
+header.fixed .hidden {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+header ul {
+  margin: 0;
+}
+header ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main.about article, main.products article {
+  display: none;
+}
+main.about article:nth-of-type(2) {
+  display: block;
+}
+main.products article:nth-of-type(1) {
+  display: block;
+}
+main article .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 25px 0;
+}
+@media (max-width: 1000px) {
+  main article .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+main article .grid-container .grid {
+  position: relative;
+  margin: 5px;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.49);
+  cursor: pointer;
+  padding: 0 0 5px 0;
+}
+@media (max-width: 1000px) {
+  main article .grid-container .grid {
+    width: 100%;
+    height: 250px;
+  }
+}
+main article .grid-container .grid a.hidden {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main article .grid-container .grid:hover a.hidden {
+  opacity: 1;
+}
+main article .grid-container .grid:after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+main article .grid-container .grid:hover:after {
+  opacity: 1;
+}
+main article .grid-container .grid:first-of-type:hover > * {
+  padding: 30px 15px;
+}
+main article .grid-container .grid > * {
+  z-index: 2;
+  color: black;
+  position: relative;
+  padding: 5px 15px;
+  margin: 0;
+}
+main article .grid-container .grid > h2 {
+  padding: 10px 15px;
+}
+main article .grid-container .grid:first-of-type:hover .product-bg {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  top: unset;
+}
+main article .grid-container .grid:first-of-type:hover {
+  display: flex;
+  align-items: flex-end;
+}
+main article .grid-container .product-bg {
+  background: #e4e4e4;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  transition: width 0.4s;
+}
+main article .grid-container #grid-t-shirt {
+  background-image: url("https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80");
+  background-size: cover;
+  transition: background-image 0.4s;
+}
+main article .grid-container #grid-hoodie {
+  background-image: url("https://images.unsplash.com/photo-1536677385083-bb29166e46df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80");
+  background-size: cover;
+  transition: background-image 0.4s;
+}
+main article .grid-container #grid-pant {
+  background-image: url("https://images.unsplash.com/photo-1542574621-e088a4464f7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1856&q=80");
+  background-size: cover;
+  transition: background-image 0.4s;
+}
+main article .grid-container #grid-hat {
+  background-image: url("https://picsum.photos/300");
+  background-size: cover;
+  transition: background-image 0.4s;
+}
+main article .grid-container #grid-tennis {
+  background-image: url("https://picsum.photos/300");
+  background-size: cover;
+  transition: background-image 0.4s;
+}
+main article .grid-container #grid-socks {
+  background-image: url("https://picsum.photos/900");
+  background-size: cover;
+  transition: background-image 0.4s;
+}
+main article #grid-t-shirt {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+@media (max-width: 1000px) {
+  main article #grid-t-shirt {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+main article #grid-socks {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+@media (max-width: 1000px) {
+  main article #grid-socks {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+main article h1 {
+  padding: 15px 25px;
+}
+main article .content-container {
+  display: flex;
+}
+main article .content-container img {
+  width: 30%;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.48);
+  z-index: 2;
+}
+main article .content-container .text-container {
+  width: 70%;
+  height: 300px;
+  padding: 30px;
+  background: #ececec;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+main article .content-container .text-container p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 150px;
+}
+
+.nav-li {
+  padding: 15px;
+  list-style-type: none;
+}
+
+.row {
+  display: flex;
+}
+
+footer {
+  background: black;
+  height: 20vh;
+}
+footer a {
+  padding: 15px;
+  color: white;
+}
+
+.row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.row-container > * {
+  width: 50%;
+}
+.row-container .column-container {
+  padding: 15px;
+}
+.row-container a {
+  display: inline-block;
+}
+.row-container h1 {
+  text-transform: capitalize;
+}
+.row-container p, .row-container h1, .row-container a {
+  opacity: 0;
+  animation: appearing;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.row-container > img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+}
+.btn.red-btn {
+  background: #e59292;
+  color: white;
+}
+
+@keyframes appearing {
+  from {
+    transform: translateY(250px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

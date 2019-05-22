@@ -1,0 +1,14 @@
+mixin list
+    ul
+        each val in testNb
+            li= val
+
+
+
+html
+    body
+        head
+        h1 #{siteContent.title}
+        p #{siteContent.content}
+        h2= testText
+        +list

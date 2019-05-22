@@ -1,0 +1,11 @@
+mixin header(dir)
+  header
+    nav
+      ul(class = dir)
+        each val in siteContent.links
+          li.nav-li
+            a(href='#')= val.name
+      ul(class = dir).hidden
+        each val in siteContent.links
+          li.nav-li
+            a(href='#')= val.name
